@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Project 5: Working with Geospatial Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      color: #1f2933;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      margin: 20px 0;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Mapping Professor Wirfs-Brock’s Interview Visit to Whitman</h1>
+
+  <div class="section">
+    <h2>Introduction</h2>
+    <p>
+      For this project, I worked with Professor Wirfs-Brock’s location data from her interview visit to Whitman in March 2022. 
+      The dataset included latitude and longitude points, timestamps, and distance from Olin Hall. Since this was geospatial data, 
+      I used maps and distance calculations to understand where her recorded locations were and what patterns appeared in the data.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Part A: Distance Analysis</h2>
+    <p> 
+      For Part A, I chose four locations in Walla Walla and used the haversine formula to calculate how far Professor Wirfs-Brock was from these locations. 
+      The locations I chose were Reid Campus Center, Bennington Lake, McDonald’s on 9th Ave, and Memorial Building.
+    </p>
+    
+    <iframe src="part_a_map.html" height="650"></iframe>
+  </div>
+
+  <div class="section">
+    <h2>Part B: Hypothesis and Exploration</h2>
+    <p>
+
+    <p>
+      My original hypothesis was that Professor WB’s recorded time in Walla Walla would mostly be centered around Whitman’s campus, 
+      especially near Olin Hall, because the dataset came from her interview visit to Whitman.
+    </p>
+
+    <p>
+      To test this, I used several visualizations and calculations. I looked at her movement in Walla Walla, the main hotspots of recorded 
+      locations, and the distribution of distances from Olin Hall.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Movement in Walla Walla</h2>
+    <p>
+      This visualization shows Professor WB’s recorded movement in Walla Walla. Instead of only showing the points by themselves, 
+      this map connects the points in time order. This makes it easier to see the movement pattern across the city.
+    </p>
+
+    <iframe src="movement_map.html" height="650"></iframe>
+
+  </div>
+
+  <div class="section">
+    <h2>Hotspot Map</h2>
+    <p>
+      Next, I created a hotspot map of the Walla Walla points. This map shows where the recorded points were most concentrated. 
+      I made this because I wanted to look at the data from a different angle, instead of only measuring distance from Olin Hall.
+    </p>
+
+    <iframe src="hotspot_map.html" height="650"></iframe>
+
+  </div>
+
+  <div class="section">
+    <h2>Conclusion</h2>
+    <p>
+      My original hypothesis was that Professor WB’s recorded Walla Walla locations would mostly be centered around Whitman’s campus, 
+      especially near Olin Hall. However, the data did not fully support that idea.
+    </p>
+
+    <p>
+      The distance summary showed that only 20.67% of the Walla Walla points were within 1 mile of Olin Hall. The analysis also showed 
+      that many points were farther away from Olin than I expected. The movement map and hotspot map gave more context by showing that 
+      the recorded locations were not only centered around the immediate campus area.
+    </p>
+
+  </div>
+
+</body>
+</html>
